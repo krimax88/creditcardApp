@@ -39,10 +39,10 @@ export default class HomeScreen extends React.Component {
   };
 
   submit = () => {
-    const { requiresName, requiresCVC,requiresPostalCode } = this.state;
-      if(requiresName == ""){alert("name is required"); return false;}
-      if(requiresPostalCode == ""){alert("postal date is required"); return false;}
-      if(requiresCVC == ""){alert("cvc is required"); return false;}
+    // const { requiresName, requiresCVC,requiresPostalCode } = this.state;
+    //   if(requiresName == ""){alert("name is required"); return false;}
+    //   if(requiresPostalCode == ""){alert("postal date is required"); return false;}
+    //   if(requiresCVC == ""){alert("cvc is required"); return false;}
     this.setState({ submitting: true });
     setTimeout(() => {
       this.setState({ submitting: false, paymentSuccess: true })
